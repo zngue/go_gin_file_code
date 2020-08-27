@@ -28,9 +28,13 @@ type BaseFile struct {
 	CreatePath
 	FilePath
 }
-func (c *BaseFile) BaseFileInit(ModelName string)  {
+func (c *BaseFile) BaseFileInit(ModelName ,ProjectName string)  {
 	c.ModelName = ModelName
-	c.BasePath="app"
+	if ProjectName!="" {
+		c.BasePath=ProjectName+"/app"
+	}else{
+		c.BasePath="app"
+	}
 	if c.ApiPath==""{
 		c.ApiPath="api"
 	}
@@ -53,8 +57,16 @@ func (c *BaseFile) BaseFileInit(ModelName string)  {
 	c.FilePath.RequestFilePath= c.CreatePath.BasePath+"/"+ c.CreatePath.RequestPath+"/"+ c.ModelName
 	c.FilePath.ServiceFilePath= c.CreatePath.BasePath+"/"+ c.CreatePath.ServicePath+"/"+ c.ModelName
 	c.FilePath.ModelFilePath= c.CreatePath.BasePath+"/"+ c.CreatePath.ModelPath+"/"+ c.ModelName
-	c.FilePath.RouterFilePath=c.RouterPath
-	c.FilePath.MigrationFilePath=c.MigrationPath
+	if ProjectName!="" {
+		c.FilePath.RouterFilePath=ProjectName+"/"+c.RouterPath
+	}else {
+		c.FilePath.RouterFilePath=c.RouterPath
+	}
+	if ProjectName!="" {
+		c.FilePath.MigrationFilePath=ProjectName+"/"+c.MigrationPath
+	}else {
+		c.FilePath.MigrationFilePath=c.MigrationPath
+	}
 	c.CreateInit()
 }
 //创建文件夹

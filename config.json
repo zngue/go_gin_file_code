@@ -1,0 +1,51 @@
+[{
+    "temp_base_path": "temp",
+    "go_mod_path": "github.com/zngue/go_gin_file_code",
+    "project_name": "app/e",
+    "model_name": [
+        "user",
+        "user_cate",
+        "user_info"
+    ]
+},
+{
+    "temp_base_path": "temp",
+    "go_mod_path": "github.com/zngue/go_gin_file_code",
+    "project_name": "app/d",
+    "model_name": [
+        "user",
+        "user_cate",
+        "user_info"
+    ]
+},
+    {
+        "temp_base_path": "temp",
+        "go_mod_path": "github.com/zngue/go_gin_file_code",
+        "project_name": "app/c",
+        "model_name": [
+            "user",
+            "user_cate",
+            "user_info"
+        ]
+    },
+    {
+        "temp_base_path": "temp",
+        "go_mod_path": "github.com/zngue/go_gin_file_code",
+        "project_name": "app/b",
+        "model_name": [
+            "user",
+            "user_cate",
+            "user_info"
+        ]
+    },
+    {
+        "temp_base_path": "temp",
+        "go_mod_path": "github.com/zngue/go_gin_file_code",
+        "project_name": "app/a",
+        "model_name": [
+            "user",
+            "user_cate",
+            "user_info"
+        ]
+    }
+]
