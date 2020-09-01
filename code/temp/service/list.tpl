@@ -10,7 +10,7 @@ func (s *Service) List ( request req.ListRequest ) (num int,mb []*{{model}}.{{St
 	if len(request.IDArr)>0 {
 		dbConn=dbConn.Where(" id in (?) ",request.IDArr)
 	}
-    request.ListInit()
+	request.ListInit()
     if request.DBConn!=nil{
         dbConn = request.DBConn(dbConn)
     }
@@ -23,7 +23,7 @@ func (s *Service) List ( request req.ListRequest ) (num int,mb []*{{model}}.{{St
 	if request.PageSize>0 && request.Page.Page>0 {
 		dbConn = dbConn.Offset(request.PageLimitOffset()).Limit(request.PageSize)
 	}
-    if request.Order!=nil {
+	if request.Order!=nil {
         dbConn = request.Order(dbConn)
     }else{
         dbConn = dbConn.Order("id desc")

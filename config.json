@@ -1,51 +1,28 @@
-[{
-    "temp_base_path": "temp",
-    "go_mod_path": "github.com/zngue/go_gin_file_code",
-    "project_name": "app/e",
-    "model_name": [
-        "user",
-        "user_cate",
-        "user_info"
-    ]
-},
-{
-    "temp_base_path": "temp",
-    "go_mod_path": "github.com/zngue/go_gin_file_code",
-    "project_name": "app/d",
-    "model_name": [
-        "user",
-        "user_cate",
-        "user_info"
-    ]
-},
+[
     {
-        "temp_base_path": "temp",
-        "go_mod_path": "github.com/zngue/go_gin_file_code",
-        "project_name": "app/c",
+        "temp_base_path": "code/temp",
+        "go_mod_path": "github.com/zngue/go_gin_comment",
+        "project_name": "t/go_gin_comment",
         "model_name": [
-            "user",
-            "user_cate",
-            "user_info"
+            "comment",
+            "comment_cate"
         ]
     },
     {
-        "temp_base_path": "temp",
-        "go_mod_path": "github.com/zngue/go_gin_file_code",
-        "project_name": "app/b",
+        "temp_base_path": "code/temp",
+        "go_mod_path": "github.com/zngue/go_gin_scoop",
+        "project_name": "t/go_gin_scoop",
         "model_name": [
-            "user",
-            "user_cate",
-            "user_info"
+            "scoop",
+            "scoop_cate"
         ]
     },
     {
-        "temp_base_path": "temp",
-        "go_mod_path": "github.com/zngue/go_gin_file_code",
-        "project_name": "app/a",
+        "temp_base_path": "code/temp",
+        "go_mod_path": "github.com/zngue/go_gin_swagger",
+        "project_name": "t/go_gin_swagger",
         "model_name": [
-            "user",
-            "user_cate",
-            "user_info"
+            "swagger"
         ]
     }
 ]
