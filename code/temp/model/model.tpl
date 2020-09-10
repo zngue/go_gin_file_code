@@ -9,6 +9,7 @@ import (
 
 type {{modelName}} struct {
 	ID         int    `gorm:"auto_increment" json:"id" form:"id"`
+	Status  int8       `gorm:"column:status" json:"status" form:"status" `
 	db.TimeStampModel
 }
 

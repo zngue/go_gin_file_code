@@ -9,8 +9,8 @@ import (
 )
 
 type FileNameChange struct {
-
 }
+
 // 驼峰式写法转为下划线写法
 func (FileNameChange) Camel2Case(name string) string {
 	buffer := NewBuffer()

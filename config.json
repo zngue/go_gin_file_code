@@ -25,4 +25,27 @@
             "swagger"
         ]
     }
+,
+    {
+        "temp_base_path": "code/temp",
+        "go_mod_path": "github.com/zngue/go_gin_config_center",
+        "project_name": "t/go_gin_config_center",
+        "model_name": [
+              "mysql",
+              "jwt",
+              "default_load",
+              "redis",
+              "log",
+              "system",
+              "http_request",
+              "aliyun_oss",
+              "service_list",
+              "config",
+              "service_list_type",
+              "we_chat",
+              "db_type",
+              "db_name",
+              "redis_name_num"
+        ]
+    }
 ]
